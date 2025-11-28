@@ -5,7 +5,10 @@ export default function Example() {
   const defaultSelectedId = "default-selected-tab";
   return (
     <div className="wrapper">
-      <Ariakit.TabProvider defaultSelectedId={defaultSelectedId}>
+      <Ariakit.TabProvider
+        id="provide_id_but_still_exec_math_random"
+        defaultSelectedId={defaultSelectedId}
+      >
         <Ariakit.TabList className="tab-list" aria-label="Groceries">
           <Ariakit.Tab className="tab">Fruits</Ariakit.Tab>
           <Ariakit.Tab className="tab" id={defaultSelectedId}>
